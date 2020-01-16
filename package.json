@@ -17,6 +17,7 @@
     "gatsby-source-graphql": "^2.1.17",
     "gatsby-transformer-sharp": "^2.2.19",
     "graphql": "^14.5.8",
+    "isomorphic-fetch": "^2.2.1",
     "prop-types": "^15.7.2",
     "react": "^16.10.1",
     "react-dom": "^16.10.1",

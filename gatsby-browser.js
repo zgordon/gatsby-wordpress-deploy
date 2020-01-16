@@ -5,12 +5,14 @@
  */
 
 import React from "react"
-import { ApollloProvider, ApolloProvider } from "@apollo/react-hooks"
+import { ApolloProvider } from "@apollo/react-hooks"
 import ApolloClient from "apollo-boost"
+import fetch from "isomorphic-fetch"
 
 export const wrapRootElement = ({ element }) => {
   const client = new ApolloClient({
-    uri: `http://gatsby-wordpress.local/graphql`,
+    uri: `https://dev-gatsby-and-wordpress.pantheonsite.io/graphql`,
+    fetch,
   })
 
   return <ApolloProvider client={client}>{element}</ApolloProvider>
